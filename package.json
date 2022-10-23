@@ -1,0 +1,17 @@
+{
+  "name": "tailwindcss-plugins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss ./dist/main.css -o ./public/build/tailwind.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "autoprefixer": "^10.4.12",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.2.1"
+  }
+}

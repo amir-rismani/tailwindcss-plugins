@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./build/tailwind.css" rel="stylesheet">
+    <title>افزونه فرم</title>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-100">
+    <div class="sm:w-full sm:max-w-md">
+        <h1 class="text-3xl font-bold text-center mb-3">ایجاد حساب کاربری</h1>
+        <span class="text-sm text-center block mb-8">قبلا ثبت نام کرده‌اید؟ <a href="#" class="text-blue-600">وارد شوید</a></span>
+        <div class="bg-white p-9 rounded-lg">
+            <form action="">
+                <div class="mb-4">
+                    <label for="email">پست الکترونیکی</label>
+                    <input type="email" name="email" id="email" autocomplete="email"/>
+                </div>
+                <div class="mb-4">
+                    <label for="password">کلمه عبور</label>
+                    <input type="password" name="password" id="password" class="w-full" autocomplete="new-password">
+                </div>
+                <div class="mb-4">
+                    <label for="country">کشور</label>
+                    <select name="country" id="country" class="">
+                        <option value="">انتخاب کنید...</option>
+                        <option value="ir">ایران</option>
+                        <option value="us">امریکا</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="terms" class="cursor-pointer">
+                        <input type="checkbox" name="terms" id="terms"/>
+                        با کلیه <a href="#" class="text-blue-600">قوانین و مقررات</a> موافق هستم.
+                    </label>
+                </div>
+                <button type="submit">ثبت نام</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
