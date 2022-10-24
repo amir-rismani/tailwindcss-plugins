@@ -1,3 +1,5 @@
 # Tailwind CSS Plugins
 
-The official Tailwind CSS plugins
+The official Tailwind CSS plugins:
+- Form
+- Typography
