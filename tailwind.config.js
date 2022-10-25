@@ -7,6 +7,10 @@ module.exports = {
       fontFamily: {
         sans: ["Vazirmatn"],
       },
+      padding: {
+        '2/3': '66.666667%',
+        '1/3': '33.333333%',
+      }
     },
   },
   plugins: [

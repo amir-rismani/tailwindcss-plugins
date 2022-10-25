@@ -1203,13 +1203,23 @@ select{
 .relative{
   position: relative;
 }
-.my-12{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+.inset-0{
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+.my-12{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .mb-3{
   margin-bottom: 0.75rem;
@@ -1241,14 +1251,23 @@ select{
 .table{
   display: table;
 }
+.grid{
+  display: grid;
+}
 .h-6{
   height: 1.5rem;
+}
+.h-0{
+  height: 0px;
 }
 .min-h-screen{
   min-height: 100vh;
 }
 .w-full{
   width: 100%;
+}
+.max-w-screen-lg{
+  max-width: 1024px;
 }
 .max-w-prose{
   max-width: 65ch;
@@ -1262,11 +1281,24 @@ select{
 .list-disc{
   list-style-type: disc;
 }
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 .items-center{
   align-items: center;
 }
 .justify-center{
   justify-content: center;
+}
+.gap-8{
+  gap: 2rem;
+}
+.gap-x-8{
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.gap-y-8{
+  row-gap: 2rem;
 }
 .rounded-lg{
   border-radius: 0.5rem;
@@ -1274,6 +1306,10 @@ select{
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 .bg-white{
   --tw-bg-opacity: 1;
@@ -1292,6 +1328,9 @@ select{
 .p-9{
   padding: 2.25rem;
 }
+.p-4{
+  padding: 1rem;
+}
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1299,6 +1338,9 @@ select{
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+.pb-2\/3{
+  padding-bottom: 66.666667%;
 }
 .text-center{
   text-align: center;
@@ -1354,9 +1396,11 @@ select{
 .ring-gray-900\/5{
   --tw-ring-color: rgb(17 24 39 / 0.05);
 }
+
 .prose-img\:rounded-lg :is(:where(img):not(:where([class~="not-prose"] *))){
   border-radius: 0.5rem;
 }
+
 @media (prefers-color-scheme: dark){
 
   .dark\:bg-slate-900{
@@ -1388,6 +1432,7 @@ select{
     --tw-prose-td-borders: var(--tw-prose-invert-td-borders);
   }
 }
+
 @media (min-width: 640px){
 
   .sm\:w-full{
@@ -1398,6 +1443,7 @@ select{
     max-width: 28rem;
   }
 }
+
 @media (min-width: 768px){
 
   .md\:mx-auto{
@@ -1408,11 +1454,20 @@ select{
   .md\:max-w-3xl{
     max-width: 48rem;
   }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
+
 @media (min-width: 1024px){
 
   .lg\:max-w-4xl{
     max-width: 56rem;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:prose-lg{
