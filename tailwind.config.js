@@ -10,6 +10,9 @@ module.exports = {
       padding: {
         '2/3': '66.666667%',
         '1/3': '33.333333%',
+      },
+      lineClamp: {
+        10: "10"
       }
     },
   },
@@ -20,6 +23,7 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/line-clamp'),
     // ...
   ],
 }
