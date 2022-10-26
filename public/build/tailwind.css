@@ -1197,6 +1197,77 @@ select{
   --tw-prose-invert-th-borders: #475569;
   --tw-prose-invert-td-borders: #334155;
 }
+.aspect-w-16{
+  position: relative;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  --tw-aspect-w: 16;
+}
+.aspect-w-16 > *{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.aspect-h-9{
+  --tw-aspect-h: 9;
+}
+.aspect-w-9{
+  position: relative;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  --tw-aspect-w: 9;
+}
+.aspect-w-9 > *{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.aspect-h-6{
+  --tw-aspect-h: 6;
+}
+.aspect-h-16{
+  --tw-aspect-h: 16;
+}
+.aspect-w-3{
+  position: relative;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  --tw-aspect-w: 3;
+}
+.aspect-w-3 > *{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.aspect-h-2{
+  --tw-aspect-h: 2;
+}
+.aspect-w-2{
+  position: relative;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  --tw-aspect-w: 2;
+}
+.aspect-w-2 > *{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.aspect-h-3{
+  --tw-aspect-h: 3;
+}
 .absolute{
   position: absolute;
 }
@@ -1209,6 +1280,10 @@ select{
   bottom: 0px;
   left: 0px;
 }
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1217,15 +1292,14 @@ select{
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.my-8{
-  margin-top: 2rem;
+.mb-8{
   margin-bottom: 2rem;
+}
+.mt-16{
+  margin-top: 4rem;
 }
 .mb-3{
   margin-bottom: 0.75rem;
-}
-.mb-8{
-  margin-bottom: 2rem;
 }
 .mb-4{
   margin-bottom: 1rem;
@@ -1254,11 +1328,11 @@ select{
 .grid{
   display: grid;
 }
-.h-6{
-  height: 1.5rem;
-}
 .h-0{
   height: 0px;
+}
+.h-6{
+  height: 1.5rem;
 }
 .min-h-screen{
   min-height: 100vh;
@@ -1290,9 +1364,6 @@ select{
 .justify-center{
   justify-content: center;
 }
-.gap-8{
-  gap: 2rem;
-}
 .gap-x-8{
   -moz-column-gap: 2rem;
        column-gap: 2rem;
@@ -1306,10 +1377,6 @@ select{
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-.bg-red-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 .bg-white{
   --tw-bg-opacity: 1;
@@ -1325,11 +1392,11 @@ select{
 .fill-slate-900{
   fill: #0f172a;
 }
-.p-9{
-  padding: 2.25rem;
-}
 .p-4{
   padding: 1rem;
+}
+.p-9{
+  padding: 2.25rem;
 }
 .px-6{
   padding-left: 1.5rem;
@@ -1345,6 +1412,10 @@ select{
 .text-center{
   text-align: center;
 }
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1352,10 +1423,6 @@ select{
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 .text-lg{
   font-size: 1.125rem;
@@ -1457,6 +1524,26 @@ select{
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:aspect-w-16{
+    position: relative;
+    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+    --tw-aspect-w: 16;
+  }
+
+  .md\:aspect-w-16 > *{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .md\:aspect-h-9{
+    --tw-aspect-h: 9;
   }
 }
 
